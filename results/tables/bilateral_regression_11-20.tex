@@ -1,0 +1,36 @@
+
+\begin{table}
+\begin{center}
+\begin{tabular}{l c c c c c}
+\hline
+ & log(patents+1) & log(patents+1) & log(patents+1) & log(patents+1) & log(patents+1) \\
+\hline
+KTX Dummy                       & $0.205^{***}$ & $0.201^{***}$ & $0.154^{***}$ & $0.171^{***}$ & $0.094^{***}$ \\
+                                & $(0.041)$     & $(0.039)$     & $(0.031)$     & $(0.037)$     & $(0.019)$     \\
+log(population\_cited)          &               & $0.273^{***}$ &               &               &               \\
+                                &               & $(0.040)$     &               &               &               \\
+log(population\_citing)         &               & $0.353^{***}$ &               &               &               \\
+                                &               & $(0.067)$     &               &               &               \\
+\hline
+year FE                         & yes           & yes           & yes           & yes           & yes           \\
+sigungu pair FE                 & yes           & yes           & yes           & yes           & yes           \\
+i-year FE                       & no            & no            & yes           & no            & yes           \\
+j-year FE                       & no            & no            & no            & yes           & yes           \\
+Clustered                       & cz pair       & cz pair       & cz pair       & cz pair       & cz pair       \\
+weighted                        & no            & no            & no            & no            & no            \\
+Num. obs.                       & $769530$      & $769530$      & $769530$      & $769530$      & $769530$      \\
+Num. groups: iso\_pair          & $51302$       & $51302$       & $51302$       & $51302$       & $51302$       \\
+Num. groups: citing\_year       & $15$          & $15$          & $15$          & $15$          & $15$          \\
+R$^2$ (full model)              & $0.546$       & $0.562$       & $0.611$       & $0.595$       & $0.661$       \\
+R$^2$ (proj model)              & $0.017$       & $0.052$       & $0.009$       & $0.011$       & $0.003$       \\
+Adj. R$^2$ (full model)         & $0.513$       & $0.530$       & $0.581$       & $0.564$       & $0.633$       \\
+Adj. R$^2$ (proj model)         & $0.017$       & $0.052$       & $0.009$       & $0.011$       & $0.003$       \\
+Num. groups: cited\_time\_pair  & $$            & $$            & $3405$        & $$            & $3405$        \\
+Num. groups: citing\_time\_pair & $$            & $$            & $$            & $3405$        & $3405$        \\
+\hline
+\multicolumn{6}{l}{\scriptsize{$^{***}p<0.01$; $^{**}p<0.05$; $^{*}p<0.1$}}
+\end{tabular}
+\caption{Statistical models}
+\label{table:coefficients}
+\end{center}
+\end{table}

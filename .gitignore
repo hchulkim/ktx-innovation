@@ -1,0 +1,8 @@
+data/
+documentation/
+lit/
+ref/
+.DS_Store
+.Rhistory
+.Rproj.user/
+ktx-innovation.Rproj

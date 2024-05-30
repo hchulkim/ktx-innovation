@@ -1,0 +1,30 @@
+
+\begin{table}
+\begin{center}
+\begin{tabular}{l c c c c c}
+\hline
+ & Model 1 & Model 2 & Model 3 & Model 4 & Model 5 \\
+\hline
+ktx\_iv:citing\_year            & $0.05^{***}$ & $0.05^{***}$ & $0.05^{***}$ & $0.05^{***}$ & $0.05^{***}$ \\
+                                & $(0.00)$     & $(0.00)$     & $(0.00)$     & $(0.00)$     & $(0.00)$     \\
+log(pop\_cited)                 &              & $-0.01$      &              &              &              \\
+                                &              & $(0.02)$     &              &              &              \\
+log(pop\_citing)                &              & $-0.01$      &              &              &              \\
+                                &              & $(0.02)$     &              &              &              \\
+\hline
+Num. obs.                       & $769530$     & $769530$     & $769530$     & $769530$     & $769530$     \\
+Num. groups: iso\_pair          & $51302$      & $51302$      & $51302$      & $51302$      & $51302$      \\
+Num. groups: citing\_year       & $15$         & $15$         & $15$         & $15$         & $15$         \\
+R$^2$ (full model)              & $0.74$       & $0.74$       & $0.78$       & $0.78$       & $0.82$       \\
+R$^2$ (proj model)              & $0.32$       & $0.32$       & $0.29$       & $0.29$       & $0.24$       \\
+Adj. R$^2$ (full model)         & $0.73$       & $0.73$       & $0.76$       & $0.76$       & $0.80$       \\
+Adj. R$^2$ (proj model)         & $0.32$       & $0.32$       & $0.29$       & $0.29$       & $0.24$       \\
+Num. groups: cited\_time\_pair  & $$           & $$           & $3405$       & $$           & $3405$       \\
+Num. groups: citing\_time\_pair & $$           & $$           & $$           & $3405$       & $3405$       \\
+\hline
+\multicolumn{6}{l}{\scriptsize{$^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$}}
+\end{tabular}
+\caption{Statistical models}
+\label{table:coefficients}
+\end{center}
+\end{table}

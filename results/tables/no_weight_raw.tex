@@ -1,0 +1,32 @@
+
+\begin{table}
+\begin{center}
+\begin{tabular}{l c c c}
+\hline
+ & patents & patents & patents \\
+\hline
+KTX Dummy                 & $70.43414^{***}$ & $638.19389$   & $-573.38939$     \\
+                          & $(25.34982)$     & $(431.54786)$ & $(374.06151)$    \\
+KTX Dummy:log(distance)   &                  & $-113.51931$  & $-61.15056$      \\
+                          &                  & $(81.29638)$  & $(60.10982)$     \\
+log(population)           &                  &               & $253.61760^{**}$ \\
+                          &                  &               & $(106.29401)$    \\
+KTX Dummy:log(population) &                  &               & $76.07635^{***}$ \\
+                          &                  &               & $(22.97021)$     \\
+\hline
+year FE                   & yes              & yes           & yes              \\
+sigungu FE                & yes              & yes           & yes              \\
+Num. obs.                 & $3002$           & $2793$        & $2793$           \\
+Num. groups: region\_code & $158$            & $147$         & $147$            \\
+Num. groups: year         & $19$             & $19$          & $19$             \\
+R$^2$ (full model)        & $0.85052$        & $0.86049$     & $0.88256$        \\
+R$^2$ (proj model)        & $0.05367$        & $0.11208$     & $0.25253$        \\
+Adj. R$^2$ (full model)   & $0.84121$        & $0.85167$     & $0.87504$        \\
+Adj. R$^2$ (proj model)   & $0.05334$        & $0.11141$     & $0.25139$        \\
+\hline
+\multicolumn{4}{l}{\scriptsize{$^{***}p<0.01$; $^{**}p<0.05$; $^{*}p<0.1$}}
+\end{tabular}
+\caption{Statistical models}
+\label{table:coefficients}
+\end{center}
+\end{table}
